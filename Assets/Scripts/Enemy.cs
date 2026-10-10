@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour, IDropHandler
 {
@@ -89,8 +90,12 @@ public class Enemy : MonoBehaviour, IDropHandler
             PrepareIntent();
             return;
         }
-        
+        // if (RunData.currentHP <= 0){
+        //     SceneManager.LoadScene("Death");
+        //     return;
+        // }
         switch (currentIntent){
+            
             case EnemyIntent.Attack:
                 int damage = 2 + power;
                 player.TakeDamage(damage);

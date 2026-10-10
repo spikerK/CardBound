@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TurnManager : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class TurnManager : MonoBehaviour
     }
 
     public void StartPlayerTurn(){
+        if (RunData.currentHP <= 0){
+            SceneManager.LoadScene("Death");
+        }
+
         isPlayerTurn = true;
 
         player.ResetEnergy();

@@ -50,9 +50,9 @@ public class Player : MonoBehaviour, IDropHandler
         Debug.Log("Player HP: " + currentHP);
         RunData.currentHP = currentHP;
 
-        if (RunData.currentHP <= 0){
-            SceneManager.LoadScene("Death");
-        }
+        // if (RunData.currentHP <= 0){
+        //     SceneManager.LoadScene("Death");
+        // }
     }
 
     public void GainBlock(int amount){
