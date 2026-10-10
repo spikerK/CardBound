@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Homescreen.unity
+    guid: 64f2b744737536f49b583f788fb8d9f2
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: d22386a18226fd94a9819c4035be1ee7
+  - enabled: 1
+    path: Assets/Scenes/Boss Level.unity
+    guid: 6a933d71ae789114e851e6d2f10c2469
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: 2846bf785d384cd4abfa56bf7e89170b
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 2ede5185330d8fc46bef0ec695fe97be
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: d0b88b7cc6f5045419c7769c44be5f9c
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
